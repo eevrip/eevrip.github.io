@@ -212,9 +212,29 @@
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true
-    }
+    },
+     navigation: {                       //navigation(arrows)
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
   });
-
+   new Swiper('.digital-art-details-slider', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {                       //navigation(arrows)
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+  });
   /**
    * Animation on scroll
    */
