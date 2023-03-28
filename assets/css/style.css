@@ -678,12 +678,13 @@ section {
   padding: 30px;
   position: relative;
   overflow: hidden;
-  margin: 0;
+  margin: 0px 0px 10px 10px;
   background: #fff;
   transition: all 0.3s ease-in-out;
   border-radius: 15px;
   text-align: center;
   border-bottom: 3px solid #fff;
+  width: 100%;
 }
 
 .services .icon-box:hover {
