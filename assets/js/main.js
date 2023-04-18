@@ -235,6 +235,23 @@
             prevEl: ".swiper-button-prev",
         },
   });
+   new Swiper('.digital-sculpt-details-slider', {
+    speed: 500,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: true
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {                       //navigation(arrows)
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+  });
   /**
    * Animation on scroll
    */
