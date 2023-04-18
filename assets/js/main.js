@@ -236,7 +236,7 @@
         },
   });
    new Swiper('.digital-sculpt-details-slider', {
-    speed: 800,
+    speed: 1000,
     loop: true,
     autoplay: {
       delay: 3000,
