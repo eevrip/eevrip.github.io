@@ -121,28 +121,29 @@
 
                <h3>Background:</h3>
                  <p align= "justify">
-                 This game was implemented as a part of a course during my Master in Computer Science along with a fellow student. We wanted to touch on all aspects of creating a game, and for the game to be complete within a short amount of time. Our game includes audio, animation, special effects and a user interface. We used assets from the Unity asset store, but we wanted our hero to be unique, so I used Blender to build both the mesh and animations for our character. 
-                  </p>
-                <p align= "justify"> 
-                We decided on an endless runner game with turns. This raised the challenge of memory efficiency, alignment of the path, avoidance of collisions while spawning items and adding aspects that made the game more challenging for the players. 
+                 This game was implemented as part of a course during my Master in Computer Science along with a fellow student. We wanted to touch on all aspects of creating a game, and for the game to be completed within a short amount of time. Our game includes audio, animation, special effects and a user interface. We used assets from the Unity asset store, but we wanted our hero to be unique, so I used Blender to build both the mesh and animations for our character. 
                  </p>
+                <p align= "justify"> 
+               We decided on an endless runner game with turns. This raised the challenge of memory efficiency, alignment of the path, avoidance of collisions while spawning items and adding aspects that made the game more challenging for the players. 
+               </p>
 
                  <h3>Story:</h3>
                   <p align= "justify">
-                  We wanted to create a silly story for the game. We decided our hero to be a chicken that has successfully escaped their coop and now they are on a mission to rescue their chicken friends from other coops. Along the road they must avoid obstacles that make them dizzy and unable to continue their mission. They also must collect fruits to keep them motivated. Most importantly they must collect golden eggs with a specific pattern to rescue their chicken friends.
-                  </p>
+                 We wanted to create a silly story for the game. We decided that our hero to be a chicken who has successfully escaped their coop and now they are on a mission to rescue their chicken friends from other coops. Along the road they must avoid obstacles that make them dizzy and unable to continue their mission. They also must collect fruits to keep them motivated. Most importantly they must collect golden eggs with a specific pattern to rescue their chicken friends.
+                 </p>
 
                    <h3>Design:</h3>
                     <p align= "justify">
-                    The goal of our game is to collect as many fruits as possible but also collect the correct pattern of golden eggs so that our hero can rescue their friends. We wanted to add aspects in the game that challenge the player. In our first design, if the player collected 6 golden eggs they could rescue their friends. But we wanted the player to be challenged, so we created a pattern of three types of golden eggs that the player must collect to do so: golden egg, golden egg cased in a crate and a golden egg cased in a high altitude. In addition, we decided on the hero to gain powers to be able to acquire the two aforementioned golden eggs. To do so, they must collect certain fruits in order as shown on the screen. The pattern of fruits is generated randomly and regenerates when the previous pattern is already collected. These powers allow the player to smash objects to gain more points and jump higher. 
-                     </p>
+                    The goal of our game is to both collect as many fruits as possible and the correct pattern of golden eggs so that our hero can rescue their friends. We also wanted to add aspects that challenge the player. In our first design, if the player collected 6 golden eggs they could rescue their friends. However, we realised that the game would be too easy and so created a pattern of three types of golden eggs that the player must collect to do so: a golden egg, golden egg encased in a crate and a golden egg placed in a high altitude. In addition, we decided that the hero should gain powers to be able to acquire the latter two golden eggs. To do so, they must collect certain fruits in the order shown to them. The pattern of fruits is generated randomly and regenerates when the previous pattern is already collected. These powers allow the player to smash objects to gain more points and jump higher. 
+ </p>
                        <h3>Mechanics:</h3>
                          <p align= "justify">
-                     This game is in the category of the endless running games including turns. The game can get more difficult as the hero moves closer to the goal by increasing the speed of the hero and the amount of static and moving obstacles along the track. A mechanism procedurally generates the path, along with the items and removes them when necessary to ensure memory efficiency. This mechanism was challenging to implement since we needed to find a way to align the paths and randomly spawn turns but avoiding path collisions by generating the same turn consecutive times. Furthermore, given that in contrast with other popular running games (temple run, subway surfers) that split the ground area to discrete parts, our continuous running area implementation raises several overlapping issues between objects that are being spawned on the ground tile thus we implemented a mechanism to avoid such collisions. Another challenge was the implementation of player movement. This was caused by the generation of a path with turns in combination with the prohibition of backtracking. These technical problems were mainly solved using our knowledge of vector analysis and programming. The incorporation of animations also caused issues with the despawning and spawning of items thus we refigured our design. For more details about our technical implementation you can read our <a href="https://github.com/eevrip/Chicken-Escape-Mini-Game" target="_blank">game design document</a>. 
+                    This game is in the category of endless running games including turns. The game gets more difficult as the hero moves closer to the goal by increasing the speed of the hero and the amount of static and moving obstacles on the track. A mechanism procedurally generates the path, along with the items and removes them when necessary to ensure memory efficiency. This mechanism was challenging to implement since we needed to align the paths and avoid path collisions as a result of randomly generating the same turn multiple consecutive times. The latter issue was solved by adding a patience threshold. Furthermore, our continuous running area implementation (as opposed to a discrete ground area split such as in popular running games like temple run or subway surfers) raises several overlapping issues between objects being spawned on the ground tile which we had to address by incorporating distance thresholds. Another challenge was the implementation of player movement. This was caused by the generation of a path with turns in combination with the prohibition of backtracking. This was solved by rotating the local coordinate system of the chicken to align with that of the path. Overall, these technical problems were mainly solved using our knowledge of vector analysis and programming. The incorporation of animations also caused issues with the timing of spawning and despawning of items thus we adjusted our design. For more details about our technical implementation see our <a href="https://github.com/eevrip/Chicken-Escape-Mini-Game" target="_blank">game design document</a>. 
                      </p>
                       <p align= "justify">
-                     Our implementation follows a scalable structure as we can modify different features according to the scenario and the difficulty that we want to achieve. We can control the number of obstacles spawned, type of obstacle that exists and type of collectables which makes it able to modify the game dynamically. Moreover, the size of the pattern to gain powers can be increased as well as the speed of the chicken. Also, new obstacles and ground styles can be incorporated to enrich the game in future versions.
-                      </p>
+                     Our implementation follows a scalable structure since we can modify different features according to the scenario and the difficulty that we want to achieve. We can control the number of obstacles spawned, type of obstacle that exists and type of collectables which makes it easy to modify the game dynamically. Moreover, the size of the pattern required to gain powers can be increased and the speed of the chicken can be altered. Finally, new obstacles and ground styles can be incorporated to enrich the game in future versions.
+
+ </p>
             </div>
 
 
@@ -159,7 +160,7 @@
                 <li><strong>Project URL</strong>: <a href="https://github.com/eevrip/Chicken-Escape-Mini-Game" target="_blank">Source Code</a></li>
                 <li><strong>Tools</strong>: Unity, C#, Blender </li> 
                  </ul>
-                <h3>Team Roles</h3> 
+                <h3>Contributions</h3> 
                  <ul>
                 <li><b>Eleni Evripidou</b>: Programming, Design, Art</li>
                  <li><b>Yiangos Georgiou</b>: Programming, Design</li>
