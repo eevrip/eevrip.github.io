@@ -10,8 +10,11 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
+    /* font-family: "Open Sans", sans-serif;*/
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #444444;
 }
 
 a {
@@ -30,7 +33,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+    /* font-family: "Raleway", sans-serif;*/
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /*--------------------------------------------------------------
@@ -90,7 +96,7 @@ h6 {
   margin: 0;
   padding: 6px 0;
   line-height: 1;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -372,7 +378,7 @@ h6 {
 #home {
   width: 100%;
   height: calc(100vh - 70px);
-  background: url("../img/blank3.png") center center;
+  background: url("../img/InPassing2.png") center center;
   background-size: cover;
   position: relative;
   margin-top: 70px;
@@ -381,8 +387,8 @@ h6 {
 
 #home:before {
   content: "";
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  position: absolute;0
   bottom: 0;
   top: 0;
   left: 0;
@@ -407,19 +413,22 @@ h6 {
   font-size: 24px;
 }
 
-#home .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 4px;
-  transition: 0.5s;
-  border: 2px solid #fff;
-  color: #fff;
-}
+    #home .btn-get-started {
+        /*font-family: "Raleway", sans-serif;*/
+        font-family: "Fuzzy Bubbles", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: uppercase;
+       /*font-weight: 500;*/ 
+        font-size: 16px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 8px 28px;
+        border-radius: 4px;
+        transition: 0.5s;
+        border: 2px solid #fff;
+        color: #fff;
+    }
 
 #home .btn-get-started:hover {
   border-color: #1bac91;
@@ -1150,17 +1159,20 @@ section {
   position: relative;
 }
 
-.faq .faq-list a {
-  display: block;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding: 0 30px;
-  outline: none;
-  cursor: pointer;
-}
+    .faq .faq-list a {
+        display: block;
+        position: relative;
+        /*font-family: "Poppins", sans-serif;*/
+        font-family: "Fuzzy Bubbles", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 24px;
+        /* font-weight: 500;*/
+        padding: 0 30px;
+        outline: none;
+        cursor: pointer;
+    }
 
 .faq .faq-list .icon-help {
   font-size: 24px;
@@ -1401,13 +1413,18 @@ section {
   font-weight: 700;
 }
 
-#footer .footer-top .footer-info p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
-  color: #fff;
-}
+    #footer .footer-top .footer-info p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 0;
+        /*font-family: "Raleway", sans-serif;
+        font-weight: 500;*/
+
+        font-family: "Fuzzy Bubbles", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #fff;
+    }
 
 #footer .footer-top .social-links a {
   font-size: 18px;
