@@ -937,6 +937,16 @@ section {
   color: #fff;
   font-weight: 600;
 }
+    .portfolio .portfolio-wrap .portfolio-info h5 {
+        font-size: 20px;
+        color: #22d8b6;
+        font-weight: 400;
+    }
+    .portfolio .portfolio-wrap .portfolio-info h3 {
+        font-size: 30px;
+        color: #ffea01;
+        font-weight: 400;
+    }
 
 .portfolio .portfolio-wrap .portfolio-info p {
   color: #ffffff;
